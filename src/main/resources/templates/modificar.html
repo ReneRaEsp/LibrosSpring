@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head th:replace="layout/plantilla :: head">
+        <title th:text="#{plantilla.titulo}"></title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div class="regresar">
+            <a class="botonRegresar" th:href="@{/}">[[#{modificar.regresar}]]</a>
+        </div>
+        <header th:replace="layout/plantilla :: header"></header>
+        
+        <br/>
+        <div class="contFormulario">
+        <form class="formulario" th:action="@{/guardar}" method="post" th:object="${libro}">
+           <input type="hidden" name="idLibro" th:field="*{idLibro}">
+        
+           <label class="etiquetas" for="titulo">[[#{index.titulo}]]</label>
+           <input class="inputs" type="text" name="titulo" th:field="*{titulo}" >
+            <span th:if="${#fields.hasErrors('titulo')}" th:errors="*{titulo}">Error en el titulo</span>
+            <br>
+            <label class="etiquetas" for="genero">[[#{index.genero}]]</label>
+            <input class="inputs" type="text" name="genero" th:field="*{genero}" >
+            <span th:if="${#fields.hasErrors('genero')}" th:errors="*{genero}">Error en el genero</span>
+            <br>
+            <label class="etiquetas" for="year">[[#{index.year}]]</label>
+            <input class="inputs" type="number" name="year" th:field="*{year}" >
+             <span th:if="${#fields.hasErrors('year')}" th:errors="*{year}">Error en el year</span>
+            <br>
+            <label class="etiquetas" for="isbn">[[#{index.isbn}]]</label>
+            <input class="inputs" type="number" name="isbn" th:field="*{isbn}">
+            <span th:if="${#fields.hasErrors('isbn')}" th:errors='*{isbn}'>Error en el isbn</span>
+            <br>
+            <div class="guardar">
+            <button class="botonGuardar" type="submit" name="guardar">[[#{modificar.guardar}]]</button>
+            </div>
+        </form>
+         </div>
+         <footer th:replace="layout/plantilla :: footer"></footer>
+        
+    </body>
+</html>
