@@ -18,7 +18,7 @@ public class ControladorInicio {
     
     @GetMapping("/")
     public String Inicio(Model model){
-        var titulo = "Listado de libros";
+        String titulo = "Listado de libros";
         List<Libro> libros = serv.listarLibros();
         model.addAttribute("titulo", titulo);
         model.addAttribute("libros", libros);
@@ -27,7 +27,7 @@ public class ControladorInicio {
     
     @GetMapping("/agregar")
     public String Agregar(Libro libro, Model model){
-        var titulo = "Datos Libro";
+        String titulo = "Datos Libro";
         model.addAttribute("titulo", titulo);
         return "modificar";
     }

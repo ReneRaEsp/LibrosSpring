@@ -5,6 +5,7 @@ import com.ramesptop.Libros.dao.*;
 import com.ramesptop.Libros.Rol;
 import com.ramesptop.Libros.Usuario;
 import java.util.ArrayList;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -27,7 +28,7 @@ public class UsuarioServ implements UserDetailsService{
         if(usuario == null){
             throw new UsernameNotFoundException(username);
         }
-        var roles = new ArrayList<GrantedAuthority>();
+        List<GrantedAuthority> roles = new ArrayList<GrantedAuthority>();
         for (Rol rol : usuario.getRoles()){
             roles.add(new SimpleGrantedAuthority(rol.getNombre()));
         }
