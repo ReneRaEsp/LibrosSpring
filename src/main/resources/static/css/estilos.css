@@ -201,9 +201,9 @@ body {
 
 .info {
   position: absolute;
-  right: -40%;
+  right: -38%;
   top: 30%;
-  width: 765px;
+  width: 655px;
   height: 230px;
   display: flex;
   justify-content: center;
@@ -214,7 +214,7 @@ body {
   right: 0%;
 }
 .info .pestanna {
-  width: 170px;
+  width: 100px;
   height: 230px;
   display: flex;
   align-items: center;
@@ -232,7 +232,7 @@ body {
 }
 .info .contenido {
   height: 230px;
-  width: 595px;
+  width: 555px;
   background: #03334ef1;
   padding: 30px;
 }
