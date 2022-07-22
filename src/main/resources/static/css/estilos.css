@@ -9,7 +9,7 @@
 body {
   background: url("/../img/lbry.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 800px;
+  background-size: 100% 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-  background: #03334ef1;
+  background: rgba(3, 51, 78, 0.9450980392);
   border-radius: 5px;
   padding: 7px;
   margin-top: 21px;
@@ -41,7 +41,7 @@ body {
 .contTabla, .contFormulario, .contLogin {
   padding: 20px;
   min-height: 500px;
-  background: #03334ef1;
+  background: rgba(3, 51, 78, 0.9450980392);
   border-radius: 10px;
 }
 .contTabla .tabla, .contFormulario .tabla, .contLogin .tabla {
@@ -50,27 +50,27 @@ body {
   border-radius: 10px;
 }
 .contTabla .tabla tr th, .contFormulario .tabla tr th, .contLogin .tabla tr th {
-  border: solid 4px #ffffff4f;
+  border: solid 4px rgba(255, 255, 255, 0.3098039216);
   border-radius: 10px;
-  background: #1c83b39a;
+  background: rgba(28, 131, 179, 0.6039215686);
   cursor: pointer;
   padding: 5px 0 5px 0;
   transition: 1s;
 }
 .contTabla .tabla tr th:hover, .contFormulario .tabla tr th:hover, .contLogin .tabla tr th:hover {
   background: #1c83b3;
-  border: solid 4px #47a5d133;
+  border: solid 4px rgba(71, 165, 209, 0.2);
 }
 .contTabla .tabla tr td, .contFormulario .tabla tr td, .contLogin .tabla tr td {
-  border: solid 4px #ffffff4d;
+  border: solid 4px rgba(255, 255, 255, 0.3019607843);
   border-radius: 10px;
-  background: #47a5d1b6;
+  background: rgba(71, 165, 209, 0.7137254902);
   cursor: pointer;
   transition: 1s;
 }
 .contTabla .tabla tr td:hover, .contFormulario .tabla tr td:hover, .contLogin .tabla tr td:hover {
-  background: #47a5d133;
-  border: solid 4px #47a5d133;
+  background: rgba(71, 165, 209, 0.2);
+  border: solid 4px rgba(71, 165, 209, 0.2);
 }
 .contTabla .tabla tr td .eYE, .contFormulario .tabla tr td .eYE, .contLogin .tabla tr td .eYE {
   text-decoration: none;
@@ -88,7 +88,7 @@ body {
   top: 20%;
   right: 2%;
   padding: 7px;
-  background: #03334ef1;
+  background: rgba(3, 51, 78, 0.9450980392);
   width: 230px;
   height: 100px;
   border-radius: 10px;
@@ -122,7 +122,6 @@ body {
     padding: 12px;
     font-size: 0.7rem;
   }
-
   .contTabla, .contFormulario {
     padding: 2px;
     min-height: 20px;
@@ -160,7 +159,7 @@ body {
 
 .guardar {
   position: relative;
-  background: #0b676e00;
+  background: rgba(11, 103, 110, 0);
 }
 
 .contLogin {
@@ -191,17 +190,17 @@ body {
   padding: 5px;
   float: right;
   color: white;
-  background: #12a1494d;
+  background: rgba(18, 161, 73, 0.3019607843);
   border-radius: 5px;
   transition: 1s;
 }
 .contLogin form .botonEnviar:hover {
-  background: #042c13a4;
+  background: rgba(4, 44, 19, 0.6431372549);
 }
 
 .info {
   position: absolute;
-  right: -38%;
+  right: 0%;
   top: 30%;
   width: 655px;
   height: 230px;
@@ -219,7 +218,7 @@ body {
   display: flex;
   align-items: center;
   padding: 20px;
-  background: #03334ef1;
+  background: rgba(3, 51, 78, 0.9450980392);
   border-radius: 10px 0px 0px 10px;
 }
 .info .pestanna .texto {
@@ -233,7 +232,7 @@ body {
 .info .contenido {
   height: 230px;
   width: 555px;
-  background: #03334ef1;
+  background: rgba(3, 51, 78, 0.9450980392);
   padding: 30px;
 }
 .info .contenido .dentro {
@@ -243,11 +242,11 @@ body {
   height: 100%;
 }
 .info .contenido .dentro p .linkGithub {
-  color: #03334ef1;
+  color: rgba(3, 51, 78, 0.9450980392);
 }
 
 .footer {
-  background: #03334ef1;
+  background: rgba(3, 51, 78, 0.9450980392);
   margin-top: 27px;
   margin-bottom: 21px;
   border-radius: 5px;
